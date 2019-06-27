@@ -1,0 +1,27 @@
+{
+"total_count": 1,
+"incomplete_results": false,
+"items": [
+    {
+    "login": "quenvSmartOSC",
+    "id": 42402111,
+    "node_id": "MDQ6VXNlcjQyNDAyMTEx",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/42402111?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/quenvSmartOSC",
+    "html_url": "https://github.com/quenvSmartOSC",
+    "followers_url": "https://api.github.com/users/quenvSmartOSC/followers",
+    "following_url": "https://api.github.com/users/quenvSmartOSC/following{/other_user}",
+    "gists_url": "https://api.github.com/users/quenvSmartOSC/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/quenvSmartOSC/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/quenvSmartOSC/subscriptions",
+    "organizations_url": "https://api.github.com/users/quenvSmartOSC/orgs",
+    "repos_url": "https://api.github.com/users/quenvSmartOSC/repos",
+    "events_url": "https://api.github.com/users/quenvSmartOSC/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/quenvSmartOSC/received_events",
+    "type": "User",
+    "site_admin": false,
+    "score": 22.215275
+    }
+        ]
+}

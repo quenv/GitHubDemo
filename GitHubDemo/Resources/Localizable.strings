@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  GitHubDemo
+
+  Created by QueNguyen on 06/22/19.
+  Copyright © 2018 QueNguyen. All rights reserved.
+*/
+
+// https://medium.com/lean-localization/ios-localization-tutorial-938231f9f881
+
+"kLogin" = "Login";
+"kNormal" = "My fav repos";
+"kSearching" = "Search repos";
+"kRecent" = "Most recent";
+"kPopular" = "Most popular";
+"kLogout" = "Logout";
+"kDetail" = "RepositoryDetail";
+"kDelete" = "Delete";

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchingCell" rowHeight="57" id="KGk-i7-Jjw" customClass="SearchingCell" customModule="GitHubDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E50-Er-8AX">
+                        <rect key="frame" x="16" y="13.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMd-Vh-p2h">
+                        <rect key="frame" x="284" y="9.5" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="9AZ-Wj-BKF"/>
+                            <constraint firstAttribute="width" secondItem="AMd-Vh-p2h" secondAttribute="height" multiplier="1:1" id="sYf-NI-McO"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="uncheck"/>
+                        <connections>
+                            <action selector="onCheckClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="woU-1v-7aY"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E50-Er-8AX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="E1h-3U-cqU"/>
+                    <constraint firstItem="E50-Er-8AX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="R9x-L6-YYY"/>
+                    <constraint firstItem="AMd-Vh-p2h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="E50-Er-8AX" secondAttribute="trailing" constant="16" id="bxQ-rs-yov"/>
+                    <constraint firstAttribute="trailing" secondItem="AMd-Vh-p2h" secondAttribute="trailing" constant="16" id="ex0-p2-Bkx"/>
+                    <constraint firstItem="AMd-Vh-p2h" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fcA-6f-Moq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkButton" destination="AMd-Vh-p2h" id="hmw-hU-cHc"/>
+                <outlet property="repositoryLabel" destination="E50-Er-8AX" id="jZM-Cf-FWs"/>
+            </connections>
+            <point key="canvasLocation" x="51.449275362318843" y="73.995535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="uncheck" width="50" height="50"/>
+    </resources>
+</document>
