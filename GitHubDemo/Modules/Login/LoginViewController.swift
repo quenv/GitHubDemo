@@ -33,7 +33,6 @@ class LoginViewController: BaseViewController {
         super.viewWillAppear(animated)
         userNameTextField.text = ""
         passwordTextField.text = ""
-       
     }
     
     override func viewDidAppear(_ animated: Bool) {

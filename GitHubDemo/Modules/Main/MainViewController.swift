@@ -35,8 +35,6 @@ class MainViewController: BaseViewController {
         super.viewWillAppear(animated)
         self.normalTableView.deselectSelectedRow()
         self.searchingTableView.deselectSelectedRow()
-        
-
     }
     
     //MARK: - SetupView

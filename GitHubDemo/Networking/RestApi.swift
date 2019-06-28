@@ -25,14 +25,18 @@ enum ResponseStatus {
     case error
 }
 
-struct RestApi: RouterAPI {
+class RestApi: RouterAPI {
 
-    private static let provider = MoyaProvider<GithubAPI>()
+    private let provider: MoyaProvider<GithubAPI>
+    
+    init() {
+        self.provider = MoyaProvider<GithubAPI>()
+    }
     
     private func baseRequest(_ target: GithubAPI) -> Observable<Result<Any>> {
-        return Observable.create({ observer -> Disposable in
-           RestApi.provider.manager.session.configuration.timeoutIntervalForRequest = 10
-            RestApi.provider.request(target, completion: { (response) in
+        return Observable.create({ [unowned self] observer -> Disposable in
+           self.provider.manager.session.configuration.timeoutIntervalForRequest = 10
+            self.provider.request(target, completion: { (response) in
                 switch response.result {
                 case .success(let value):
                     do {
